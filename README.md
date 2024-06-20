@@ -1,4 +1,4 @@
-Berlin Service API
+# Berlin Service API
 
 Dieses Projekt stellt eine API zur Verfügung, die die Servicedienstleistungen der Stadt Berlin bereitstellt. Die API wurde mit FastAPI entwickelt und nutzt eine SQL-Datenbank zur Speicherung der Daten. Die Daten werden mithilfe von BeautifulSoup und der Requests Library von der offiziellen Website der Stadt Berlin gesammelt.
 
@@ -67,3 +67,4 @@ uvicorn main:app --reload
 - **GET /ALL-SERVICES?DIGITAL-SERVICE=TRUE/FALSE**: Filtert nach Online- oder Offline-Services.
 - **GET /ALL-SERVICES?RESPONSIBLE-OFFICE=...**: Filtert nach dem zuständigen Amt.
 - **GET /ALL-FORMS**: Gibt alle Adressen von Formularen zurück.
+
