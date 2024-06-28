@@ -10,8 +10,7 @@ Das Projekt umfasst folgende Hauptkomponenten:
 - **models.py**: Definiert die Datenbankmodelle und enthält Funktionen zur Initialisierung der Datenbank.
 - **views.py**: Beinhaltet die API-Endpunkte und die Logik zur Verarbeitung der Anfragen.
 - **controllers.py**: Enthält die Logik zur Datenextraktion und -verarbeitung von der Website.
-- **auth.py**: Verwaltet die Authentifizierungslogik mittels OAuth2.
-- **create_user.py**: Ein Hilfsskript zur Erstellung neuer Benutzer in der Datenbank.
+
 
 ## Installation
 
@@ -38,13 +37,6 @@ Führen Sie den folgenden Befehl aus, um die Datenbank zu initialisieren und die
 python -c "from models import create_db_and_tables; create_db_and_tables()"
 ```
 
-## Benutzer erstellen
-
-Um einen neuen Benutzer hinzuzufügen, führen Sie das Skript `create_user.py` aus:
-
-```sh
-python create_user.py
-```
 
 ## Anwendung starten
 
@@ -54,11 +46,6 @@ Starten Sie die FastAPI-Anwendung mit uvicorn:
 uvicorn main:app --reload
 ```
 
-## API-Endpunkte
-
-### Authentifizierung
-
-- **POST /token**: Authentifizierung und Erhalt eines Tokens.
 
 ### Services
 
